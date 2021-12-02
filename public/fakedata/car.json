@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "image": "https://i.ibb.co/n37CCtY/202165987-870470283813766-6397905821265575554-n.jpg",
+      "name": "Audi A6",
+      "type": "Sedan",
+      "year": "2015",
+      "price": 157500,
+      "acceleration": "4.5 sec",
+      "torque": "627 lb-ft",
+      "power": "577 hp",
+      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+   },
+   {
+      "id": 2,
+      "image": "https://i.ibb.co/zhgMKTh/217901363-10160006534904301-6622465796581426119-n.jpg",
+      "name": "Mazda MX-5",
+      "type": "Sedan",
+      "year": "2015",
+      "price": 157500,
+      "acceleration": "4.5 sec",
+      "torque": "627 lb-ft",
+      "power": "577 hp",
+      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+   },
+   {
+      "id": 3,
+      "image": "https://i.ibb.co/ZW57Jh7/232262815-10159996325744301-4809035633093773550-n.jpg",
+      "name": "Mercedes Benz GLS450",
+      "type": "Sedan",
+      "year": "2015",
+      "price": 157500,
+      "acceleration": "4.5 sec",
+      "torque": "627 lb-ft",
+      "power": "577 hp",
+      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+   }
+]
