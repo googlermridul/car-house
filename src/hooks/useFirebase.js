@@ -12,6 +12,7 @@ const useFirebase = () => {
    const [user, setUser] = useState({})
    const [error, setError] = useState('')
    const [isLoading, setIsLoading] = useState(true)
+   const [admin, setAdmin] = useState(null);
    const auth = getAuth();
    const googleProvider = new GoogleAuthProvider();
 
@@ -45,9 +46,11 @@ const useFirebase = () => {
       })
    }
 
-   const saveUser = (email, displayName) => {
-      
-   }
+   useEffect(() => {
+      fetch(`https://immense-hamlet-59638.herokuapp.com/users/${user.email}`)
+      .then(res => res.json())
+      .then(data => setAdmin(data.admin))
+   }, [user.email])
 
    // sign out
    const logOut = () => {
@@ -62,7 +65,6 @@ const useFirebase = () => {
       });
    }
 
-
    // user state change
    useEffect(() => {
       onAuthStateChanged(auth, (user) => {
@@ -76,7 +78,7 @@ const useFirebase = () => {
       });
    }, [auth])
 
-   return {getName, user, setUser, error, setError, isLoading, setIsLoading, getEmail, getPassword, signInWithGoogle, signInWithEmail, signUpWithEmail, logOut, updateUserName}
+   return {getName, user, setUser, admin, error, setError, isLoading, setIsLoading, getEmail, getPassword, signInWithGoogle, signInWithEmail, signUpWithEmail, logOut, updateUserName}
 }
 
 export default useFirebase;      

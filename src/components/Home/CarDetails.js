@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useCars from '../../hooks/useCars';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import BookCar from '../Shared/BookCar';
 import Navigration from '../Shared/Navigration';
 import Footer from '../Shared/Footer';
@@ -33,7 +31,6 @@ const CarDetails = () => {
                      </div>
                   </div>
                   <div className="col-lg-4">
-                     {/* <BookPackage car={details}></BookPackage> */}
                      <div className="info">
                         <h3 className="name">{name} <span className="year"> {year}</span></h3>
                         <h5 className="type">{type}</h5>

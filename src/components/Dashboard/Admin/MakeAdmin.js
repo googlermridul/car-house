@@ -2,17 +2,17 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const MakeAdmin = () => {
-
    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
    const onSubmit = data => {
-      fetch(`https://immense-hamlet-59638.herokuapp.com/makeAdmin`, {
-         method: 'POST',
+      fetch(`https://immense-hamlet-59638.herokuapp.com/addUser/admin`, {
+         method: 'PUT',
          headers: { 'Content-Type': 'application/json'},
          body: JSON.stringify(data)
       })
       .then(res => res.json())
       .then(result => {
-         if (result.insertedId) {
+         if (result.modifiedCount) {
             alert('Admin added successfully')
             reset()
          }
@@ -44,7 +44,3 @@ const MakeAdmin = () => {
 };
 
 export default MakeAdmin;
-{/* <div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-<span class="input-group-text" id="basic-addon2">@example.com</span>
-</div> */}

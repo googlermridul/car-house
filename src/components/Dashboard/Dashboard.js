@@ -16,7 +16,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Dashboard = () => {
   const { path, url } = useRouteMatch();
-  const {logOut} = useAuth()
+  const {admin, logOut} = useAuth()
 
    return (
       <>
@@ -28,47 +28,53 @@ const Dashboard = () => {
             <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
               <div className="position-sticky">
                 <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThList} /> Dashboard
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/pay`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThList} /> Pay
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/myOrders`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThList} /> My Orders
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/addReview`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThList} /> Add Review
-                    </Link>
-                  </li>
-                  <hr />{/* chumki choleche eka pothe */}
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/addCar`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Add Car
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/manageCars`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Manage Cars
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/manageOrders`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Manage Orders
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="link" to={`${url}/makeAdmin`}>
-                      <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Make Admin
-                    </Link>
-                  </li>
+                  {
+                    admin ?
+                    <>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/addCar`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Add Car
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/manageCars`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Manage Cars
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/manageOrders`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Manage Orders
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/makeAdmin`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Make Admin
+                        </Link>
+                      </li>
+                    </> :
+                    <>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThList} /> Dashboard
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/pay`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThList} /> Pay
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/myOrders`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThList} /> My Orders
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="link" to={`${url}/addReview`}>
+                          <FontAwesomeIcon className="fa-icon" icon={faThList} /> Add Review
+                        </Link>
+                      </li>
+                    </>
+                  }
                   <li className="nav-item">
                     <span className="link" style={{cursor: 'pointer'}} onClick={logOut}>
                       <FontAwesomeIcon className="fa-icon" icon={faSignOutAlt} /> Logout

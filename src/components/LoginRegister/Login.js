@@ -16,14 +16,17 @@ const Login = () => {
       setIsLoading(true)
       signInWithGoogle()
       .then(res => {
+         const name = res.user.displayName;
+         const email = res.user.email;
+
          setUser(res.user)
+         saveUser(email, name, 'PUT');
          setError('');
          history.push(redirectUrl)
       })
       .finally(() => setIsLoading(false))
       .catch(err => {
          setError(err.message);
-         // console.log(err.message);
       });
    }
 
@@ -38,8 +41,19 @@ const Login = () => {
       })
       .catch(err => {
          setError(err.message);
-         // console.log(err.message);
       });
+   }
+
+   const saveUser = (email, displayName, method) => {
+      const user = { email, displayName };
+      fetch('https://immense-hamlet-59638.herokuapp.com/addUser', {
+          method: method,
+          headers: {
+              'content-type': 'application/json'
+          },
+          body: JSON.stringify(user)
+      })
+      .then()
    }
 
    return (
