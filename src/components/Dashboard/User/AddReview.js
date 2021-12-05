@@ -38,11 +38,11 @@ const AddReview = () => {
                               {errors.name && <span className="error">name is required</span>}
                            </div>
                            <div className="form-group col-md-6">
-                              <input className="form-control shadow-sm" defaultValue="" {...register("rating", { required: true })} placeholder="Rating" />
+                              <input className="form-control shadow-sm" defaultValue="" {...register("rating", { required: true })} type="number" placeholder="Rating out of 5" />
                               {errors.rating && <span className="error">rating is required</span>}
                            </div>
                            <div className="col-12">
-                              <textarea cols="30" rows="10" className="form-control shadow-sm text-area" defaultValue="" {...register("comment", { required: true })} placeholder="Comment" />
+                              <textarea cols="30" rows="10" className="form-control shadow-sm text-area" defaultValue="" {...register("comment", { required: true })} placeholder="Your review" />
                               {errors.comment && <span className="error">comment is required</span>}
                            </div>
                         </div>

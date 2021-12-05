@@ -278,6 +278,10 @@ h5 {
   margin-bottom: 0px;
   margin-top: 15px;
 }
+.review-box .fa-star {
+  color: #ffc78c;
+  font-size: 14px;
+}
 /* -------------------- REVIEW SECTION END -------------------- */
 
 /* -------------------- LOGIN AND REGISTRATION START -------------------- */
