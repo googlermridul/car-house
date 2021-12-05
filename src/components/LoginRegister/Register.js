@@ -56,12 +56,12 @@ const Register = () => {
                         <div className="form-group">
                            <input onBlur={getPassword} type="password" className="form-control shadow-sm" id="password"  placeholder="Password" required />
                         </div>
-                        <button type="submit" className="btn-yatra shadow-sm">Submit</button>
+                        <button type="submit" className="btn-car shadow-sm">Submit</button>
                      </form>
                      <hr />
                      <div className="text-center">
                         <p className="firebase-error">{error}</p>
-                        <button onClick={handleGoogleSignIn} className="btn-yatra google-btn shadow-sm"><img src={googleIcon} alt="" /> Signin With Google</button>
+                        <button onClick={handleGoogleSignIn} className="btn-car google-btn shadow-sm"><img src={googleIcon} alt="" /> Signin With Google</button>
                         <p className="switcher">Already an user? <Link className="link" to="/login">Login</Link></p>
                      </div>
                   </div>

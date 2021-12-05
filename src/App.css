@@ -28,7 +28,7 @@ h3 {
   font-weight: 600 !important;
 }
 h4 {
-  font-size: 22px !important;
+  font-size: 20px !important;
   font-weight: 600 !important;
 }
 h5 {
@@ -36,37 +36,26 @@ h5 {
   font-weight: 600 !important;
 }
 
-.btn-yatra {
-  background: #6665fe;
-  border: 1px solid #6665fe;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+.btn-car {
+  background: #232429;
+  border: 2px solid #232429;
+  /* font-family: 'Poppins', sans-serif;
+  font-size: 15px; */
   color: #fff;
   width: 180px;
-  height: 60px;
-  border-radius: 100px;
+  height: 55px;
+  /* border-radius: 100px; */
   transition: .3s;
 }
-.btn-yatra.green {
-  background: #6665fe;
+.btn-car.sm {
+  background: #232429;
   width: 120px;
-  height: 50px;
+  height: 45px;
 }
 
-.mui-green {
-  color: #fff !important;
-  text-transform: capitalize !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 15px !important;
-  border-radius: 100px !important;
-  border: 1px solid #6665fe !important;
-  width: 150px !important;
-}
-.mui-green:hover,
-.btn-yatra:hover {
+.btn-car:hover {
   background: #fff !important;
-  color: #6665fe !important;
+  color: #232429 !important;
 }
 #basic-menu .link {
   color: #666 !important;
@@ -103,11 +92,11 @@ h5 {
 
 /* -------------------- NAVIGRATION START -------------------- */
 .navbar {
-  background: #333;
+  background: #fff;
   padding: 15px 0 !important;
 }
 .navbar .logo {
-  color: #fff;
+  color: #333;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 0;
@@ -126,7 +115,7 @@ h5 {
 }
 .navbar .nav-item .name,
 .navbar .nav-item .link {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   margin: 0 25px;
   transition: .4s;
@@ -146,7 +135,7 @@ h5 {
 
 /* -------------------- HOME BANNER START -------------------- */
 .home-banner {
-  margin-top: 90px;
+  margin-top: 75px;
   margin-bottom: 100px;
   background: url(./images/home-banner2.jpg);
   background-size: cover;
@@ -165,12 +154,45 @@ h5 {
 }
 /* -------------------- HOME BANNER END -------------------- */
 
+
+/* -------------------- SERVICE SECTION START -------------------- */
+.feature {
+  margin-bottom: 70px;
+}
+.feature-box {
+  padding: 30px;
+  transition: .3s;
+  text-align: center;
+}
+.feature-box .img-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  padding: 20px;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 15px;
+  background: #f0f0f0;
+}
+.feature-box .img-box img {
+  width: 36px;
+}
+.feature-box h3 {
+  margin-bottom: 15px;
+}
+/* -------------------- SERVICE SECTION END -------------------- */
+
+
 /* -------------------- TOUR SECTION START -------------------- */
 .car-section {
-  background: #fff;
+  background: #f0f0f0;
   padding-top: 100px;
   padding-bottom: 85px;
   margin-bottom: 100px;
+}
+.car-section.explore {
+  margin-bottom: 0;
+  padding-top: 175px;
 }
 .car-box {
   background: #fff;
@@ -209,24 +231,54 @@ h5 {
   align-items: center;
 }
 .car-details {
-  margin-top: 100px;
+  margin-top: 75px;
   padding: 100px 0;
 }
 .car-details .description {
   margin: 15px 0;
 }
-.car-details .date-place {
+.car-details .type {
   margin: 15px 0;
+  font-weight: 500;
 }
-.car-details .fa-icon {
-  margin-right: 10px;
+.car-box .year,
+.car-details .year {
+  font-size: 16px;
+  color: #666;
 }
-.car-details .btn-yatra {
-  margin-top: 15px;
+.car-details ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.car-details ul li span {
+  font-weight: 500;
+  display: inline-block;
+  width: 200px;
+  list-style: none;
 }
 /* -------------------- TOUR SECTION END -------------------- */
 
-
+/* -------------------- REVIEW SECTION START -------------------- */
+.review-section {
+  margin-bottom: 85px;
+}
+.review-section .review-box {
+  background: #f0f0f0;
+  margin: 15px 0;
+  padding: 30px;
+  transition: .3s;
+  display: flex;
+}
+.review-box .img-box img {
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+.review-box .name {
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+/* -------------------- REVIEW SECTION END -------------------- */
 
 /* -------------------- LOGIN AND REGISTRATION START -------------------- */
 .login {
@@ -255,7 +307,7 @@ h5 {
 }
 .login .login-box .form-control {
   border: none;
-  height: 60px;
+  height: 55px;
   border-radius: 0px;
   padding: 20px;
   color: #666;
@@ -263,15 +315,15 @@ h5 {
 }
 .login .login-box .form-control:focus {
   box-shadow: 0 0rem 0rem rgba(0,0,0,.15)!important;
-  border: 1px solid #6665fe;
+  border: 1px solid #232429;
 }
 .form-control.shadow-sm {
   box-shadow: 0 0rem 0rem rgba(0,0,0,.15)!important;
 }
-.login .login-box .btn-yatra {
+.login .login-box .btn-car {
   width: 100%;
 }
-.login .login-box .btn-yatra:hover {
+.login .login-box .btn-car:hover {
   background: #6665fe;
   color: #fff;
   transform: translate(0px, 0px);
@@ -312,19 +364,175 @@ h5 {
 input::placeholder {
   color: #999 !important;
 }
-.book-package {
+.book-car {
   padding: 0;
   background: #fff;
 }
 /* -------------------- LOGIN AND REGISTRATION END -------------------- */
 
 
+/* -------------------- ADD PACKAGE PAGE START -------------------- */
+.add-package {
+  padding: 100px 0;
+  background: #ecf7f3;
+}
+.add-package .login-box {
+  max-width: 1200px;
+}
+.add-package .login-box .text-area {
+  height: 150px;
+}
+.add-package .login-box .btn-car {
+  margin-top: 30px;
+  width: 50%;
+  margin-right: 15px;
+}
+
+/* -------------------- ADD PACKAGE PAGE END -------------------- */
+
+
+/* -------------------- MY PACKAGE SECTION START -------------------- */
+.my-order-section {
+  background: #ecf7f3;
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+.order-section-box h4 {
+  margin-bottom: 15px;
+  width: 190px;
+}
+.order-section-box {
+  margin: auto;
+  min-height: 262px;
+  max-width: 1200px;
+}
+.order-box {
+  background: #fff;
+  margin: 15px 0;
+  display: flex;
+  overflow: hidden;
+}
+.order-box .img-box {
+  width: 35%;
+}
+.order-box .img-box img {
+  height: 100%;
+}
+.order-box .info {
+  padding: 30px;
+  position: relative;
+  width: 65%;
+}
+.order-box .date {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.order-box .status {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 14px;
+  background: #ecf7f3;
+  padding: 5px 20px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+.order-box .pending {
+  background: #f77e5c33;
+}
+.order-box .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -------------------- MY PACKAGE SECTION END -------------------- */
+
+
+
+/* -------------------- MANAGE PACKAGES START -------------------- */
+.manage-orders {
+  background: #ecf7f3;
+  padding: 100px 0;
+}
+.manage-orders .manage-orders-box h3 {
+  margin-bottom: 30px;
+}
+.manage-orders .manage-orders-box {
+  padding: 30px;
+  background: #fff;
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: auto;
+}
+.manage-orders .table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  min-width: 500px;
+}
+.manage-orders .table tbody {
+  border-top: 0px;
+  position: relative;
+  top: 10px;
+}
+.manage-orders thead {
+  background: #ecf7f3;
+}
+.manage-orders thead th {
+  color: #666;
+  font-weight: 600;
+  padding: 1rem .5rem;
+  border: none;
+}
+.manage-orders td {
+  border: none;
+  color: #666;
+  padding: .8rem .5rem !important;
+}
+.manage-orders td .btn-car {
+  font-size: 14px;
+  width: 100px;
+  height: 35px;
+}
+.manage-orders td .approved {
+  background: #ecf7f3;
+  border: 2px solid #ecf7f3;
+  color: #666;
+}
+.manage-orders td .approved:hover {
+  background: #ecf7f3 !important;
+  border: 2px solid #ecf7f3 !important;
+  color: #666 !important;
+}
+.manage-orders td .delete {
+  background: #f77d5c;
+  border: 2px solid #f77d5c;
+}
+.manage-orders td .delete:hover {
+  color: #f77d5c !important;
+}
+.manage-orders thead th:first-child {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  overflow: hidden;
+}
+.manage-orders thead th:first-child,
+.manage-orders tbody td:first-child {
+  padding-left: 20px !important;
+}
+.manage-orders thead th:last-child {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  overflow: hidden;
+}
+/* -------------------- MANAGE PACKAGES END -------------------- */
 
 
 /* -------------------- FOOTER SECTION START -------------------- */
 .footer {
   padding: 100px 0;
-  background: #333;
+  background: #232429;
 }
 .footer p {
   color: #999;
@@ -380,7 +588,7 @@ input::placeholder {
   .collapse {
     text-align: center;
   }
-  .collapse .btn-yatra {
+  .collapse .btn-car {
     margin-top: 15px;
   }
   .home-banner {

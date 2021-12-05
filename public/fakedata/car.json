@@ -1,38 +1,139 @@
 [
    {
-      "id": 1,
-      "image": "https://i.ibb.co/n37CCtY/202165987-870470283813766-6397905821265575554-n.jpg",
-      "name": "Audi A6",
-      "type": "Sedan",
-      "year": "2015",
-      "price": 157500,
+      "image": "https://i.ibb.co/hcBwN5j/amg-g63-min.jpg",
+      "name": "Mercedes AMG G 63",
+      "type": "SUV",
+      "year": "2021",
+      "engine": "AMG 4.0L V8 biturbo",
+      "price": "156,450",
       "acceleration": "4.5 sec",
       "torque": "627 lb-ft",
       "power": "577 hp",
-      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+      "transmission": "Automatic",
+      "description": "AMG G 63 comes with 577 handcrafted horses, the AMG G 63 is a legend raised to a higher power for a new era. Advanced luxury, unwavering confidence, and extensive individualization let you create a G that's at ease in any corner of the world."
    },
    {
-      "id": 2,
-      "image": "https://i.ibb.co/zhgMKTh/217901363-10160006534904301-6622465796581426119-n.jpg",
+      "image": "https://i.ibb.co/ssZ1L1S/gls-450-min.jpg",
+      "name": "Mercedes GLS 450",
+      "type": "SUV",
+      "year": "2022",
+      "engine": "3.0L inline-6 turbo ",
+      "price": "77,200",
+      "acceleration": "5.9 sec",
+      "torque": "369 lb-ft",
+      "power": "362 hp",
+      "transmission": "Autmomatic",
+      "description": "Imagine an SUV that lets up to seven adults ride at the leading edge of luxury. Advanced safety, hybrid electrification, and countless innovations let the GLS 450 respond to your voice, and to your desires now and tomorrow."
+   },
+   {
+      "image": "https://i.ibb.co/XzQpbf5/mazda-mx5-min.jpg",
       "name": "Mazda MX-5",
-      "type": "Sedan",
-      "year": "2015",
-      "price": 157500,
-      "acceleration": "4.5 sec",
-      "torque": "627 lb-ft",
-      "power": "577 hp",
-      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+      "type": "Sport",
+      "year": "2021",
+      "engine": "2.0L",
+      "price": "26,830",
+      "acceleration": "5.1 sec",
+      "torque": "157 px",
+      "power": "155 hp",
+      "transmission": "Manual",
+      "description": "The Mazda MX-5 is a lightweight two-passenger roadster sports car manufactured and marketed by Mazda with a front mid-engine, rear-wheel-drive layout. The convertible is marketed as the Mazda Roadster or Eunos Roadster in Japan"
    },
    {
-      "id": 3,
-      "image": "https://i.ibb.co/ZW57Jh7/232262815-10159996325744301-4809035633093773550-n.jpg",
-      "name": "Mercedes Benz GLS450",
+      "image": "https://i.ibb.co/P9VmdRk/model-3-min.jpg",
+      "name": "Tesla Model 3",
       "type": "Sedan",
-      "year": "2015",
-      "price": 157500,
-      "acceleration": "4.5 sec",
-      "torque": "627 lb-ft",
-      "power": "577 hp",
-      "description": " AMG G 63 is a legend raised to a higher power for a new era."
+      "year": "2019",
+      "engine": "Electric",
+      "price": "58,990",
+      "acceleration": "3.1 sec",
+      "torque": "302 lb-ft",
+      "power": "221 hp",
+      "transmission": "Autmomatic",
+      "description": "The Model 3 is an electric fastback mid-size four-door sedan developed by Tesla. ... The base Model 3 delivers an EPA-rated all-electric range of 272 miles."
+   },
+   {
+      "image": "https://i.ibb.co/2kmCNmw/cla-45s-min.jpg",
+      "name": "Mercedes CLA 45S",
+      "type": "Sport",
+      "year": "2021",
+      "engine": "2.0L",
+      "price": "26,830",
+      "acceleration": "4.9 sec",
+      "torque": "500 Nm",
+      "power": "421 hp",
+      "transmission": "Manual",
+      "description": "With its athletic proportions, the Mercedes-AMG CLA 45 4MATIC Coupé stands out very clearly from series production. The AMG-specific radiator grille with special flics as air deflector elements on the outer air inlets in the front apron does not leave any doubt about this. From the rear, the coupé with the exhaust tailpipe trims positioned on the left and right, with a diameter of 90 mm, stands out significantly from the competition."
+   },
+   {
+      "image": "https://i.ibb.co/x8sBstZ/mercedes-s500-min.jpg",
+      "name": "Mercedes S 500",
+      "type": "Sedan",
+      "year": "2021",
+      "engine": "3.0L inline-6 turbo",
+      "price": "109,800",
+      "acceleration": "4.9 sec",
+      "torque": "384 lb-ft",
+      "power": "429 hp",
+      "transmission": "Autmomatic",
+      "description": "2021 Mercedes-Benz S-Class S 500 4MATIC Sedan features and specs at Car and Driver.Powering this particular saloon is the magnanimous V8, 3.0-litre, twin-turbocharged petrol power plant that can produce an immense power of 429 hp."
+   },
+   {
+      "image": "https://i.ibb.co/yqsHybW/glc-300-min.jpg",
+      "name": "Mercedes GLC 300",
+      "type": "SUV",
+      "year": "2022",
+      "engine": "2.0L inline-4 turbo",
+      "price": "33,550",
+      "acceleration": "6.1 sec",
+      "torque": "273 lb-ft",
+      "power": "255 hp",
+      "transmission": "Autmomatic",
+      "description": "It takes bold steps to stay the benchmark for midsize SUVs. Turbo power, confident all-wheel drive, innovative luxuries, advanced safety, and a spacious, sensuous cabin are all wrapped in elegantly athletic style."
+   },
+   {
+      "image": "https://i.ibb.co/YLdcwSt/cls-350-min.jpg",
+      "name": "Mercedes CLS 350",
+      "type": "Sedan",
+      "year": "2021",
+      "engine": "2.0L inline-4 turbo",
+      "price": "27,570",
+      "acceleration": "6.1 sec",
+      "torque": "273 lb-ft",
+      "power": "306 bhp",
+      "transmission": "Autmomatic",
+      "description": "Mercedes Benz India has officially rolled out the all new CLS 350 version in the automobile market. This latest variant comes with slight modifications to its interiors and exteriors. To start with its exteriors, it comes with a refurbished radiator grille and slightly tweaked rear profile."
+   },
+   {
+      "image": "https://i.ibb.co/zrsNmyW/audi-q7s-min.jpg",
+      "name": "Audi Q7",
+      "type": "SUV",
+      "year": "2022",
+      "engine": "3.0L",
+      "price": "71,990",
+      "acceleration": "4.9 sec",
+      "torque": "500 Nm",
+      "power": "335 bhp",
+      "transmission": "Manual",
+      "description": "Like the rest of the Audi lineup, the 2022 Q7 SUV combines a handsome design, a technology-rich cabin, and a fun-loving chassis—it just does so with room for the whole family thanks to its standard three rows of seats. All-wheel drive is standard with both engines."
+   },
+   {
+      "image": "https://i.ibb.co/gT5YbG8/rr-vogue-min.jpg",
+      "name": "Range Rover Vogue",
+      "type": "SUV",
+      "year": "2022",
+      "engine": "3.0L",
+      "price": "71,990",
+      "acceleration": "7.4 sec",
+      "torque": "500 Nm",
+      "power": "335 bhp",
+      "transmission": "Manual",
+      "description": "Like the rest of the Audi lineup, the 2022 Range Rover Vogue combines a handsome design, a technology-rich cabin, and a fun-loving chassis—it just does so with room for the whole family thanks to its standard three rows of seats. All-wheel drive is standard with both engines."
    }
 ]
+
+
+
+
+
+
+
