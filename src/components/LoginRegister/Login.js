@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useLocation, useHistory } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import googleIcon from '../../images/google1.png'
+import Navigration from '../Shared/Navigration'
+import Footer from '../Shared/Footer'
 
 const Login = () => {
    const {setUser, error, setError, setIsLoading, signInWithGoogle, signInWithEmail, getEmail, getPassword} = useAuth();
@@ -41,32 +43,36 @@ const Login = () => {
    }
 
    return (
-      <div className="login">
-         <div className="container">
-            <div className="row">
-               <div className="col">
-                  <div className="login-box shadow">
-                     <h3>Log in to Car House</h3>
-                     <form onSubmit={handleSignIn}>
-                        <div className="form-group">
-                           <input onBlur={getEmail} type="email" className="form-control shadow-sm" id="email" aria-describedby="emailHelp" placeholder="Email" required />
+      <>
+         <Navigration />
+         <div className="login">
+            <div className="container">
+               <div className="row">
+                  <div className="col">
+                     <div className="login-box shadow">
+                        <h3>Log in to Car House</h3>
+                        <form onSubmit={handleSignIn}>
+                           <div className="form-group">
+                              <input onBlur={getEmail} type="email" className="form-control shadow-sm" id="email" aria-describedby="emailHelp" placeholder="Email" required />
+                           </div>
+                           <div className="form-group">
+                              <input onBlur={getPassword} type="password" className="form-control shadow-sm" id="password"  placeholder="Password" required />
+                           </div>
+                           <button type="submit" className="btn-car shadow-sm">Submit</button>
+                        </form>
+                        <hr />
+                        <div className="text-center">
+                           <p className="firebase-error">{error}</p>
+                           <button onClick={handleGoogleSignIn} className="btn-car google-btn shadow-sm"><img src={googleIcon} alt="" /> Login With Google</button>
+                           <p className="switcher">New user? <Link className="link" to="/register">Register</Link></p>
                         </div>
-                        <div className="form-group">
-                           <input onBlur={getPassword} type="password" className="form-control shadow-sm" id="password"  placeholder="Password" required />
-                        </div>
-                        <button type="submit" className="btn-car shadow-sm">Submit</button>
-                     </form>
-                     <hr />
-                     <div className="text-center">
-                        <p className="firebase-error">{error}</p>
-                        <button onClick={handleGoogleSignIn} className="btn-car google-btn shadow-sm"><img src={googleIcon} alt="" /> Login With Google</button>
-                        <p className="switcher">New user? <Link className="link" to="/register">Register</Link></p>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+         <Footer />
+      </>
    );
 };
 

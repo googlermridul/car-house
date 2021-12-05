@@ -2,7 +2,6 @@ import { useState } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import initializeAuthentication from "../firebase/firebaseInitialize";
 import { useEffect } from "react";
-import { useHistory } from "react-router";
 
 initializeAuthentication()
 
@@ -15,9 +14,6 @@ const useFirebase = () => {
    const [isLoading, setIsLoading] = useState(true)
    const auth = getAuth();
    const googleProvider = new GoogleAuthProvider();
-   
-   const history = useHistory()
-   const redirectUrl = '/'
 
    // get email, password and name
    const getEmail = e => setEmail(e.target.value);
@@ -29,10 +25,6 @@ const useFirebase = () => {
       if (password.length < 6) {
          setError('Password should be at least 6 characters')
       }
-      // if (!/^(?=.*[0-9]).*$/.test(password)) {
-      //    setError('Password must contain at least one digit')
-      //    return;
-      // }
       return createUserWithEmailAndPassword(auth, email, password)
    }
 
@@ -53,19 +45,23 @@ const useFirebase = () => {
       })
    }
 
+   const saveUser = (email, displayName) => {
+      
+   }
+
    // sign out
    const logOut = () => {
       setIsLoading(true)
       signOut(auth)
       .then(() => {
          setUser({})
-         history.push(redirectUrl)
       })
       .finally(() => setIsLoading(false))
       .catch(err => {
          setError(err.message);
       });
    }
+
 
    // user state change
    useEffect(() => {

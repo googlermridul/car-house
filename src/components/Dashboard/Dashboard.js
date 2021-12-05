@@ -2,7 +2,7 @@ import React from 'react';
 import './Dashboard.css';
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThLarge, faThList , faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faThLarge, faThList, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 import NotFound from '../Shared/NotFound';
 import TopHeader from './TopHeader';
 import ManageOrders from './Admin/ManageOrders';
@@ -12,9 +12,11 @@ import AddCar from './Admin/AddCar';
 import MyOrders from './User/MyOrders';
 import AddReview from './User/AddReview';
 import Pay from './User/Pay';
+import useAuth from '../../hooks/useAuth';
 
 const Dashboard = () => {
   const { path, url } = useRouteMatch();
+  const {logOut} = useAuth()
 
    return (
       <>
@@ -66,6 +68,11 @@ const Dashboard = () => {
                     <Link className="link" to={`${url}/makeAdmin`}>
                       <FontAwesomeIcon className="fa-icon" icon={faThLarge} /> Make Admin
                     </Link>
+                  </li>
+                  <li className="nav-item">
+                    <span className="link" style={{cursor: 'pointer'}} onClick={logOut}>
+                      <FontAwesomeIcon className="fa-icon" icon={faSignOutAlt} /> Logout
+                    </span>
                   </li>
                 </ul>
               </div>

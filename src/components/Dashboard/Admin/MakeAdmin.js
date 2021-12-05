@@ -29,11 +29,11 @@ const MakeAdmin = () => {
                      <form onSubmit={handleSubmit(onSubmit)} className="mb-0 text-start">
                         <div className="row">
                            <div className="form-group col-md-6">
-                              <input className="form-control shadow-sm" defaultValue="" {...register("email", { required: true })} placeholder="Email" />
+                              <input className="form-control shadow-sm" defaultValue="" {...register("email", { required: true })} type="email" placeholder="Email" />
                               {errors.email && <span className="error">email is required</span>}
                            </div>
                         </div>
-                        <button type="submit" className="btn-car shadow-sm">Submit</button>
+                        <button type="submit" className="btn-car shadow-sm">Make Admin</button>
                      </form>
                   </div>
                </div>
