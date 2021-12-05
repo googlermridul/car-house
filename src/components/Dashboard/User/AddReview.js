@@ -38,7 +38,7 @@ const AddReview = () => {
                               {errors.name && <span className="error">name is required</span>}
                            </div>
                            <div className="form-group col-md-6">
-                              <input className="form-control shadow-sm" defaultValue="" {...register("rating", { required: true })} type="number" placeholder="Rating out of 5" />
+                              <input className="form-control shadow-sm" defaultValue="" {...register("rating", { min: 0, max: 5 }, { required: true })} type="number" placeholder="Rating out of 5" />
                               {errors.rating && <span className="error">rating is required</span>}
                            </div>
                            <div className="col-12">

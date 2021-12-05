@@ -13,6 +13,7 @@ Car House Limited inaugurated in 1991 and has been importing brand new and recon
 * Client can share their opinion about Car House.
 * Admin can add new car package.
 * Admin can control people booked packages.
+* Admin can make another admin.
 
 ### Languages & Tools:
 #### react, firebase, nodejs, mongodb, react-bootstrap, material-ui
@@ -20,4 +21,4 @@ Car House Limited inaugurated in 1991 and has been importing brand new and recon
 
 ### Project Screenshot:
 
-<!-- <img src="https://i.ibb.co/RHB2Sjn/screencapture-localhost-3000-home-2021-11-21-17-47-56.png" alt="yatra googlermridul" border="0"> -->
+<img src="https://i.ibb.co/WvX4xj4/screencapture-localhost-3000-home-2021-12-05-23-03-56.png" alt="yatra googlermridul" border="0">
